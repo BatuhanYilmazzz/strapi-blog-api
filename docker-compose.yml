@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  marsinvestment.com.tr-blog-api:
+    container_name: marsinvestment.com.tr-blog-api
+    restart: unless-stopped
+    image: marsinvestment.com.tr-blog-api
+    build:
+      context: .
+    ports:
+      - 1010:1010
+    expose:
+      - 1010
+    networks:
+      - internal
+    volumes:
+      - /marsinvestment:/api/marsinvestment
+      - /marsinvestment/uploads:/api/public/uploads
+
+  postgres:
+    image: postgres
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    networks:
+      - internal
+    environment:
+      - POSTGRES_USER=mars
+      - POSTGRES_PASSWORD=mars1234
+      - POSTGRES_DB=marsblog
+    volumes:
+      - /mars/postgres/marsblog:/var/lib/postgresql/data
+
+networks:
+  internal:
+    driver: bridge
