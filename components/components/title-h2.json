@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_title_h2s",
+  "info": {
+    "name": "title_h2",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title_h2": {
+      "type": "string"
+    }
+  }
+}

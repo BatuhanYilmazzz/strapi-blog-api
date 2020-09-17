@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_title_h6s",
+  "info": {
+    "name": "title_h6",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "title_h6": {
+      "type": "string"
+    }
+  }
+}

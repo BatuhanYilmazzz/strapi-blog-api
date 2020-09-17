@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "Blog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "model": "language"
+    },
+    "description": {
+      "type": "text"
+    },
+    "key_title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "key_title"
+    },
+    "publishdate": {
+      "type": "string"
+    },
+    "Sections": {
+      "type": "dynamiczone",
+      "components": [
+        "components.title-h1",
+        "components.title-h2",
+        "components.title-h3",
+        "components.title-h4",
+        "components.title-h5",
+        "components.title-h6",
+        "components.paragraph",
+        "components.image",
+        "components.imagewithtextleft",
+        "components.imagewithtextright",
+        "components.richtext"
+      ]
+    },
+    "showcaseimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

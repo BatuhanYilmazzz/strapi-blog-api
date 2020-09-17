@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_richtexts",
+  "info": {
+    "name": "richtext",
+    "icon": "ankh"
+  },
+  "options": {},
+  "attributes": {
+    "richtext": {
+      "type": "richtext"
+    }
+  }
+}

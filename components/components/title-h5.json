@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_title_h5s",
+  "info": {
+    "name": "title_h5",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "title_h5": {
+      "type": "string"
+    }
+  }
+}

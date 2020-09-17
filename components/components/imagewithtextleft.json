@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_components_imagewithtextlefts",
+  "info": {
+    "name": "imagewithtextleft",
+    "icon": "angle-down"
+  },
+  "options": {},
+  "attributes": {
+    "lefttext": {
+      "type": "richtext"
+    },
+    "image_left": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image_left_alt_tag": {
+      "type": "string"
+    }
+  }
+}

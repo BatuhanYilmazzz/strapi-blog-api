@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_title_h4s",
+  "info": {
+    "name": "title_h4",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title_h4": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_components_imagewithtextrights",
+  "info": {
+    "name": "imagewithtextright",
+    "icon": "angle-right"
+  },
+  "options": {},
+  "attributes": {
+    "righttext": {
+      "type": "richtext"
+    },
+    "image_right": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image_right_alt_tag": {
+      "type": "string"
+    }
+  }
+}
